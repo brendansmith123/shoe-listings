@@ -1,0 +1,17 @@
+.menu {
+    color: coral;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-width: 10px;
+    width: 710px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.canary {
+    color: black;
+}
+
+h5 {
+    color: black;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeezys</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/shoes">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/menu" title="Link">Choices</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/totals" title="Link">Cart</a>
+            </li>
+        </ul>
+    </nav>  
+      <!---Trending-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://static.soldoutservice.com/canary-cpz59lvcc9vmdyl0qhgh5.jpg.jpg" class="d-block w-100" alt="First Shoe">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="canary">Off White X Air Jordan 1 "Canary Yellow"</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://cms-cdn.thesolesupplier.co.uk/2020/03/Off-White-x-Air-Jordan-4-Bred_w900.jpg" class="d-block w-100" alt="Second Shoe">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Off White X Air Jordan 4 "Bred"</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="@app.route('/menu/yeezys')
+            <action class="d-block w-100" alt="Third Shoe">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Off White X Nike Air Max 90</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div> 
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://cdn.shopify.com/s/files/1/0214/7974/files/YEEZY_BOOST_350_V2_MX_OAT_Left_Social_FB_2500x1878_398ee761-1b6b-4a77-b734-491b16df20a6_2048x2048.jpg?v=1634169801" class="card-img-top" alt="First Shoe">
+                <div class="card-body">
+                  <h5 class="card-title">Yeezy 350 V2 "MX Oat"</h5>
+                  <p class="card-text">The Yeezy 350 V2 first released in late 2016</p>
+                  <a href="https://stockx.com/adidas-yeezy-boost-350-v2-mx-oat" title="Link">Click Here to buy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://www.admiddleeast.com/2021/06/Yeezy_GY0260_01_standard1.jpeg" class="card-img-top" alt="Second Shoe">
+                <div class="card-body">
+                  <h5 class="card-title">Yeezy 700 V3 "Kyanite"</h5>
+                  <p class="card-text">The Yeezy 350 V3</p>
+                  <a href="https://stockx.com/adidas-yeezy-700-v3-kyanite" title="Link">Click Here to buy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://houseofheat.co/app/uploads/2021/11/adidas-yeezy-knit-runner-boot-sulfur-gy1824-release-date-1-1.jpg" class="card-img-top" alt="Third shoe">
+                <div class="card-body">
+                  <h5 class="card-title">Yeezy Knit RNR Boot "Sulfur"</h5>
+                  <p class="card-text">The Yeezy Knit RNR Boot first appeared during Yeezy season 8</p>
+                  <a href="https://stockx.com/adidas-yeezy-knit-rnr-boot-sulfur" title="Link">Click Here to buy</a>
+                </div>
+              </div>
+            </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
