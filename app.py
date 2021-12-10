@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
+ 
 from pymongo import MongoClient
 client = MongoClient()
 db = client.shoelist
@@ -60,8 +61,18 @@ def add_offwhite():
 
 @app.route('/menu/airjordan')
 def add_highfashion():
-  return render_template('highfashion.html', shoes=shoes.find())    
+  return render_template('airjordan.html', shoes=shoes.find())    
 
 @app.route('/menu/highfashion')
 def add_high_fashion():
   return render_template('highfashion.html', shoes=shoes.find())
+
+@app.route('/cart')
+def order_applied():
+    print(request.form.get('name'))
+    shoe = {
+        'name': request.form.get('name'),
+        'price': request.form.get('amount'),
+        }
+    shoe_id=shoe.insert_one(shoe).inserted_id
+    return redirect(url_for('product_show',shoe_id=shoe_id))
