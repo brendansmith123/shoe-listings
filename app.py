@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for
- 
+import os
 from pymongo import MongoClient
-client = MongoClient()
+uri = os.environ.get('MONGODB_URI', 'mongodb+srv://metrobrendan:Amazing7@Cluster0.cbl9h.mongodb.net/Cluster0?retryWrites=true&w=majority')
+client = MongoClient(uri)
 db = client.shoelist
 app = Flask(__name__)
 
