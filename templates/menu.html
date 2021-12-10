@@ -10,27 +10,17 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <nav>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/shoes">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/menu" title="Link">Choices</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/totals" title="Link">Cart</a>
-            </li>
-        </ul>
-    </nav> 
     <!--Choices-->
     <div class ="menu">
         <ul class="list-group">
             <a class="list-group-item" aria-current="page" href="/menu/yeezys" title="Link">Yeezy</a>
             <a class="list-group-item" aria-current="page" href="/menu/offwhite" title="Link">Off White X Nike</a>
-            <li class="list-group-item">Air Jordans</li>
+            <a class="list-group-item" aria-current="page" href="/menu/airjordan" title="Link">Air Jordan</a>
             <a class="list-group-item" aria-current="page" href="/menu/highfashion" title="Link">High Fashion</a>
         </ul>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
